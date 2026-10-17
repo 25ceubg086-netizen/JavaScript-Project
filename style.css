@@ -1,0 +1,102 @@
+body {
+    display: flex;
+    background : linear-gradient(
+            130deg,
+            rgba(125,125,125,1),
+            rgba(00,00,00,1)
+        );
+    background-repeat: no-repeat;
+    bbackground-attachment: fixed;
+    background-size: cover;
+    padding: 0;
+    * {
+        font-family: 'Courier New', Courier, monospace;
+    }
+    
+}
+
+h1 {
+    border: 0.2vh solid gray;
+    padding: 0.5vh 4vh;
+    font-family: "Cursive";
+    box-shadow: 0 0 0.2vh gray;
+    
+}
+
+@media (orientation : portrait) {
+    body {
+        flex-direction: column;
+    }
+    #field {
+        width : 100%;
+        height: 50vh;
+        margin : 0 0 5px 0;
+    }
+    
+    #canvas {
+        width : 100%;
+        height : 50vh;
+    }
+    
+}
+
+@media (orientation : landscape ){
+    body {
+        flex-direction: row;
+    }
+    #field {
+        width: 50%;
+        height: 100vh;
+        margin: 0 5px 0 0;
+    }
+    #canvas {
+        width: 50%;
+        height: 100vh;
+    }
+}
+
+#field{
+    display:flex;
+    flex-direction : column ;
+    align-items : center;
+    justify-content: center;
+    border : 0.2vh solid gray;
+}
+
+#canvas {
+    display: block;
+    background : linear-gradient(
+            -50deg,
+            rgba(125,125,125,0.4),
+            rgba(00,00,00,0.4)
+        );
+    margin: 0;
+    border : 0.2vh solid gray;
+}
+
+
+textarea {
+    resize: none;
+}
+
+.attr {
+    width: 80%;
+    resize: none;
+    background: inherit;
+    margin: 0.5% 0 0.5% 0;
+    box-shadow: 0 0 0.2vh gray;
+}
+
+button {
+    border-radius: 10%;
+    cursor: pointer;
+    background : rgba(155,155,155,0.5);
+    text-shadow: 0 0 0.2vh black;
+}
+
+#change {
+    margin-top: max(1vh,1vw);
+    display: flex;
+    gap : max(25vw,25vh);
+    justify-content: center;
+}
